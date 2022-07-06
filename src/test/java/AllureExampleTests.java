@@ -3,6 +3,8 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -12,6 +14,7 @@ public class AllureExampleTests extends TestBase {
     @AllureId("10928")
     @DisplayName("Simple example test")
     @Story("Main menu")
+    @Tags({@Tag("web"), @Tag("ui")})
     @Feature("Main page")
     void testNewsLink()
     {
@@ -21,8 +24,8 @@ public class AllureExampleTests extends TestBase {
     }
 
     @Test
-    @AllureId("10929")
-    @DisplayName("Tes Jobs link")
+    @Tags({@Tag("web"), @Tag("ui")})
+    @DisplayName("Test Jobs link")
     void testJobsLink()
     {
         step("Opening the page");
@@ -34,6 +37,7 @@ public class AllureExampleTests extends TestBase {
     @AllureId("10930")
     @DisplayName("Open some link")
     @Story("Main menu")
+    @Tags({@Tag("web"), @Tag("ui")})
     @Owner("allure8")
     @Feature("Main page")
     void testSomeLink() {
@@ -46,7 +50,8 @@ public class AllureExampleTests extends TestBase {
     @AllureId("10931")
     @DisplayName("Open some random link")
     @Story("Main menu")
-    @Owner("allure8")
+    @Owner("Mike")
+    @Tags({@Tag("web"), @Tag("ui")})
     @Feature("Main page")
     void testSomeRandomLink() {
         step("Open main page");
@@ -58,7 +63,8 @@ public class AllureExampleTests extends TestBase {
     @AllureId("10941")
     @DisplayName("Open totally different link")
     @Story("Main menu")
-    @Owner("Mike Bo")
+    @Owner("Big Bad Mutuch")
+    @Tags({@Tag("web"), @Tag("ui")})
     @Feature("Main page")
     void totallyDifferentLink() {
         step("Open main page");
