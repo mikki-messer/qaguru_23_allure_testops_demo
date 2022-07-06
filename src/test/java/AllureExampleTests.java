@@ -57,7 +57,7 @@ public class AllureExampleTests {
     @Test
     @DisplayName("Open totally different link")
     @Story("Main menu")
-    @Owner("Mike B")
+    @Owner("Mike Bbb")
     @Feature("Main page")
     void totallyDifferentLink() {
         step("Open main page");
