@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-public class AllureExampleTests {
+public class AllureExampleTests extends TestBase {
     @Test
     @AllureId("10928")
     @DisplayName("Simple example test")
@@ -55,6 +55,7 @@ public class AllureExampleTests {
     }
 
     @Test
+    @AllureId("10941")
     @DisplayName("Open totally different link")
     @Story("Main menu")
     @Owner("Mike Bo")
