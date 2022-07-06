@@ -53,4 +53,15 @@ public class AllureExampleTests {
         step("Click some random link");
         step("Check page header equals Some random page");
     }
+
+    @Test
+    @DisplayName("Open totally different link")
+    @Story("Main menu")
+    @Owner("Mike B")
+    @Feature("Main page")
+    void totallyDifferentLink() {
+        step("Open main page");
+        step("Click some totally different link");
+        step("Check page header equals Some totally different page");
+    }
 }
